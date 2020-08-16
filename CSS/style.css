@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: black;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 48px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+h2:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -20px; /*線の上下位置*/
+  display: block;
+  width: 69px; /*線の長さ*/
+  height: 5px; /*線の太さ*/
+  background-color: black; /*線の色*/
+}
+
+h3 {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体";
+  font-size: 24px;
+}
+
+p,
+menu .list div,
+.access-list dd {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体";
+  font-size: 16px;
+}
+
+/*-----------------------------------------
+  header
+-----------------------------------------*/
+
+.mainvisual {
+  background-image: url(../images/top-image.png);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+}
+
+.main-info {
+  position: absolute;
+  top: 292px;
+  left: 138px;
+}
+
+.main-info .pc-words {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+.fas {
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+}
+
+.header-left {
+  margin-left: 40px;
+}
+
+.header-left a {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header-left p {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/*-----------------------------------------
+  About
+-----------------------------------------*/
+
+.container {
+  width: 1004px;
+  margin: 0 auto;
+}
+
+.about {
+  margin-top: 161px;
+  margin-bottom: 153px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .info {
+  padding: 77px 56px 51px 57px;
+  background-color: #f0f0f0;
+  width: 30%;
+}
+
+.about h3 {
+  padding-bottom: 23px;
+}
+
+.sub {
+  font-weight: bold;
+  padding-bottom: 23px;
+}
+
+/*-----------------------------------------
+  Item
+-----------------------------------------*/
+
+.items .item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 23px;
+}
+
+.items .item figure {
+  width: 33%;
+}
+
+.item figcaption {
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.item h3 {
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 18px;
+}
+
+.item .item3 p {
+  text-align: center;
+}
+
+/*-----------------------------------------
+  Price
+-----------------------------------------*/
+
+.menu {
+  background-image: url(../images/price-image.png);
+  background-repeat: no-repeat;
+  background-position: 341px 231px;
+  margin-top: 160px;
+  margin-bottom: 283px;
+  height: 977px;
+  overflow: hidden;
+}
+
+.menu .price {
+  padding: 55px 85px 67.4px 85px;
+  border: 5px solid #a38787;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 324px;
+}
+
+.menu .price-head {
+  text-align: center;
+}
+
+.menu .price-head p {
+  padding: 18px 0 81px 0;
+}
+
+.menu h2:before {
+  left: 40%;
+}
+
+table {
+  width: 100%;
+}
+
+table .table-right {
+  text-align: right;
+}
+
+.menu td {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体";
+  border-bottom: dashed 0.5px #707070;
+  line-height: 3.6;
+  font-weight: bold;
+}
+
+/*-----------------------------------------
+  Blog
+-----------------------------------------*/
+
+.blog .blog-list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 62px;
+}
+
+.blog time {
+  font-weight: bold;
+  display: block;
+  padding-top: 30px;
+}
+
+/*-----------------------------------------
+  Access
+-----------------------------------------*/
+
+.access {
+  margin: 190px 0 219px;
+}
+
+.access-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 93px 0 152px 0;
+}
+
+.access .access-list dt {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.access .access-list dd {
+  padding-bottom: 15px;
+}
+
+.access .root {
+  padding: 0 126px;
+  letter-spacing: 0.8px;
+}
+
+.access .root li {
+  padding-top: 31px;
+}
+
+/*-----------------------------------------
+  footer
+-----------------------------------------*/
+
+footer {
+  background-color: #262626;
+  border: 1px solid #5c3333;
+  width: 100%;
+  height: 264px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  color: #ffffff;
+}

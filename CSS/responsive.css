@@ -1,0 +1,257 @@
+@media screen and (min-width: 376px) {
+  nav ul {
+    display: flex;
+    margin-right: 27px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    margin-left: 63px;
+    display: block;
+    position: relative;
+  }
+  
+  nav ul li a:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px; /*線の上下位置*/
+    display: block;
+    width: 57px; /*線の長さ*/
+    height: 8px; /*線の太さ*/
+    background-color: black; /*線の色*/
+  }
+  
+  .sp-nav,
+  .sp-words,
+  .blog4 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 38px;
+  }
+
+  h2:before {
+    bottom: -10px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p,
+  menu .list div,
+  .access-list dd {
+    font-size: 12px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  /*-----------------------------------------
+    header
+  -----------------------------------------*/
+
+  .drawer-hamburger {
+    background: #ffffff;
+  }
+
+  .drawer--right.drawer-open .drawer-hamburger {
+    right: 0px;
+}
+
+  .header-left {
+    margin-left: 20px;
+  }
+
+  .mainvisual {
+    height: 673px;
+  }
+
+  .main-info {
+    position: absolute;
+    top: 261px;
+    left: 41px;
+  }
+
+  .pc-nav,
+  .pc-words,
+  .item .item3,
+  .root3 {
+    display: none;
+  }
+
+  .about,
+  .items .item,
+  .access-container {
+    flex-direction: column;
+  }
+
+  .main-info .sp-words {
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    padding-top: 22px;
+  }
+
+  .fas {
+    bottom: 20px;
+  }
+
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .drawer-nav {
+    padding-top: 98px;
+  }
+
+  .drawer-nav a {
+    font-size: 24px;
+  }
+
+  /*-----------------------------------------
+    About
+  -----------------------------------------*/
+
+  .about {
+    margin-top: 100px;
+    margin-bottom: 127.7px;
+  }
+
+  .about .info {
+    background-color: transparent;
+    padding: 0;
+    width: 100%;
+  }
+
+  .about img {
+    padding-top: 22px;
+  }
+
+  .about h3 {
+    font-size: 20px;
+  }
+
+  /*-----------------------------------------
+    Item
+  -----------------------------------------*/
+
+  .items .item figure {
+    margin-bottom: 50px;
+  }
+
+  .items .item figure {
+    width: 100%;
+  }
+
+  .item figcaption {
+    margin-bottom: 18px;
+  }
+
+  /*-----------------------------------------
+    Price
+  -----------------------------------------*/
+
+  .menu {
+    background-position: center;
+    padding-top: 48px;
+    height: 646px;
+    overflow: hidden;
+  }
+
+  .menu .price {
+    padding: 64px 61.5px 67.4px;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .menu h2:before {
+    left: 30%;
+  }
+
+  /*-----------------------------------------
+    Blog
+  -----------------------------------------*/
+
+  .blog .blog-list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .blog .blog-list div {
+    width: 48%;
+  }
+
+  .blog time {
+    padding: 0;
+  }
+
+  .blog p {
+    padding-bottom: 30px;
+  }
+  
+  /*-----------------------------------------
+  Access
+  -----------------------------------------*/
+  
+  .access-container {
+    padding: 0;
+  }
+  
+  .access {
+    margin: 100px 0 100px;
+  }
+
+  .access figcaption {
+    font-weight: bold;
+    padding: 10px 0;
+  }
+
+  .access .access-list dt {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .access .root {
+    padding: 37.2px 0;
+    letter-spacing: 0.8px;
+  }
+
+  .access {
+    margin-bottom: 100px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 218px;
+  }
+
+  /*-----------------------------------------
+    footer
+  -----------------------------------------*/
+
+  footer {
+    width: 100%;
+    height: 162px;
+  }
+
+  footer p {
+    font-size: 40px;
+  }
+}

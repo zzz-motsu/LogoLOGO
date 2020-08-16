@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="コスメのセレクトショップのサイトです。">
+    <meta name="keywords" content="コスメ、セレクトショップ">
+    <title>LogoLOGO</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.drawer').drawer();
+      });
+    </script>
+  </head>
+
+  <body class="drawer drawer--right">
+    <!-- ヘッダー開始 -->
+    <header class="mainvisual" role="banner">
+      <div class="top-container">
+        <div class="header-left">
+          <a href="index.html">LogoLOGO</a>
+          <p>コスメです。</p>
+        </div>
+        <div class="sp-nav">
+          <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span>
+            <span class="drawer-hamburger-icon"></span>
+          </button>
+          <nav class="drawer-nav" role="navigation">
+            <ul class="drawer-menu">
+              <li><a class="drawer-menu-item" href="#">About</a></li>
+              <li><a class="drawer-menu-item" href="#">Staf</a></li>
+              <li><a class="drawer-menu-item" href="#">Menu</a></li>
+              <li><a class="drawer-menu-item" href="#">Blog</a></li>
+              <li><a class="drawer-menu-item" href="#">Access</a></li>
+            </ul>
+          </nav>
+        </div>
+          <nav class="pc-nav">
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Staf</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Access</a></li>
+            </ul>
+          </nav>
+      </div>
+      <div class="main-info">
+        <h1>Awesome<br>Cosmetic</h1>
+        <p class="pc-words">
+          コスメのセレクトショップのサイトです。
+        </p>
+        <p class="sp-words">
+          サブタイトルサブタイトルサブタイトルサブタイトルサブタイトルサブタイトル
+        </p>
+      </div>
+      <i class="fas fa-angle-down fa-4x" style="color: white;"></i>
+    </header>
+    <main role="main">
+
+    <!-- ヘッダー終了 -->
+
+    <div class="container">
+      <!-- About開始 -->
+      <section class="about">
+        <div class="info">
+          <h2>About</h2>
+          <p class="sub">私たちについて</p>
+          <h3>お店のコンセプト</h3>
+          <p class="explanation">
+            コンセプトについての説明。コンセプトについての説明。コンセプトについての説明。コンセプトについての説明。コンセプトについての説明。コンセプトについての説明。
+          </p>
+        </div>
+        <img src="images/about-image.png">
+      </section>
+
+      <!-- About終了 -->
+
+      <!-- Item開始 -->
+
+      <section class="items">
+        <div class="item-info">
+          <h2>Item</h2>
+          <p class="sub">アイテム</p>
+        </div>
+
+        <div class="item">
+          <figure>
+            <img src="images/item-image.png">
+            <figcaption>ファンデーション</figcaption>
+            <h3>商品名</h3>
+            <p class="pc-words">
+              この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。
+            </p>
+            <p class="sp-words">
+              商品について
+            </p>
+          </figure>
+
+          <figure>
+            <img src="images/item-image.png">
+            <figcaption>リップ</figcaption>
+            <h3>コスメ2コスメ2コスメ2コスメ2コスメ2</h3>
+            <p class="pc-words">
+              商品について商品について商品について商品について商品について商品について
+            </p>
+            <p class="sp-words">
+              商品について
+            </p>
+          </figure>
+
+          <figure class="item3">
+            <img src="images/item-image.png">
+            <figcaption>アイシャドー</figcaption>
+            <h3>コスメ3コスメ3コスメ3コスメ3</h3>
+            <p>
+              真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中
+            </p>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Item終了 -->
+
+      <!-- Price開始 -->
+
+      <section class="menu">
+        <div class="price">
+          <div class="price-head">
+            <h2>Price</h2>
+            <p class="sub">料金表</p>
+          </div>
+
+            <table>
+              <tr>
+                <td>アイライナー</td>
+                <td class="table-right">¥3,000</td>
+              </tr>
+              <tr>
+                <td>リップ</td>
+                <td class="table-right">¥3,000</td>
+              </tr>
+              <tr>
+                <td>グロス</td>
+                <td class="table-right">¥3,000</td>
+              </tr>
+              <tr>
+                <td>シャドウ</td>
+                <td class="table-right">¥3,000</td>
+              </tr>
+              <tr>
+                <td>マニキュア</td>
+                <td class="table-right">¥3,000</td>
+              </tr>
+            </table>
+                
+        </div>
+      </section>
+
+      <!-- Price終了 -->
+
+      <!-- Blog開始 -->
+
+      <section class="blog">
+        <h2>Blog</h2>
+        <p class="sub">ブログ</p>
+        <div class="blog-list">
+          <div>
+            <img src="images/blog1.png">
+            <time>2019/12/3</time>
+            <p>1月の営業日ご案内。</p>
+          </div>
+
+          <div>
+            <img src="images/blog2.png">
+            <time>2019/11/2</time>
+            <p>12月の営業日ご案内。</p>
+          </div>
+
+          <div>
+            <img src="images/blog3.png">
+            <time>2019/11/2</time>
+            <p>メイク始めました。</p>
+          </div>
+
+          <div class="blog4">
+            <img src="images/blog4.png">
+            <time>2019/11/2</time>
+            <p>メイク始めました。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- blog終了 -->
+
+      <!-- access開始 -->
+
+      <section class="access">
+        <h2>Access</h2>
+        <p class="sub">アクセス</p>
+
+        <div class="access-container">
+          <div class="access-list">
+            <dl>
+              <dt>ADRESS</dt>
+              <dd>大阪市北区芝田一丁目</dd>
+              <dt>TELL</dt>
+              <dd>000-0000-0000</dd>
+              <dt>ON TIME</dt>
+              <dd>平日</dd>
+              <dt>OFF TIME</dt>
+              <dd>土曜日曜祝日</dd>
+            </dl>
+          </div>
+
+          <figure>
+            <figcaption class="sp-words">行き方の説明</figcaption>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.797080588983!2d135.4996965107426!3d34.70581470357293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e691c5c21a61%3A0x426587edd82ea9dc!2z44CSNTMwLTAwMTIg5aSn6Ziq5bqc5aSn6Ziq5biC5YyX5Yy66Iqd55Sw77yR5LiB55uu!5e0!3m2!1sja!2sjp!4v1596575136856!5m2!1sja!2sjp"
+              width="664"
+              height="421"
+              frameborder="0"
+              style="border: 0;"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </figure>
+        </div>
+
+        <div class="root">
+          <h3>道順の説明</h3>
+          <ol>
+            <li>
+              ①行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明
+            </li>
+            <li>
+              ②行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明
+            </li>
+            <li class="root3">
+              ③行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- access終了 -->
+    </div>
+
+    <footer>
+      <p>LOGOLOGo</p>
+    </footer>
+  </main>
+  </body>
+</html>
