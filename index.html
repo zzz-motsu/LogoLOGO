@@ -7,8 +7,6 @@
     <meta name="keywords" content="コスメ、セレクトショップ">
     <title>LogoLOGO</title>
     <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/responsive.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet">
@@ -17,15 +15,43 @@
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <!-- drawer.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
     <!-- jquery & iScroll -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
     <!-- drawer.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
     <script>
-      $(document).ready(function() {
-        $('.drawer').drawer();
+      jQuery(function($){
+        $(document).ready(function() {
+          $('.drawer').drawer();
+        });
       });
+    </script>
+
+    <!-- jQuery.jsの読み込み -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+    <!-- スムーズスクロール部分の記述 -->
+    <script>
+    $(function(){
+      // #で始まるアンカーをクリックした場合に処理
+      $('a[href^=#]').click(function() {
+          // スクロールの速度
+          var speed = 400; // ミリ秒
+          // アンカーの値取得
+          var href= $(this).attr("href");
+          // 移動先を取得
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          // 移動先を数値で取得
+          var position = target.offset().top;
+          // スムーススクロール
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+      });
+    });
     </script>
   </head>
 
@@ -44,21 +70,21 @@
           </button>
           <nav class="drawer-nav" role="navigation">
             <ul class="drawer-menu">
-              <li><a class="drawer-menu-item" href="#">About</a></li>
+              <li><a class="drawer-menu-item" href="#sec1">About</a></li>
               <li><a class="drawer-menu-item" href="#">Staf</a></li>
-              <li><a class="drawer-menu-item" href="#">Menu</a></li>
-              <li><a class="drawer-menu-item" href="#">Blog</a></li>
-              <li><a class="drawer-menu-item" href="#">Access</a></li>
+              <li><a class="drawer-menu-item" href="#sec3">Menu</a></li>
+              <li><a class="drawer-menu-item" href="#sec4">Blog</a></li>
+              <li><a class="drawer-menu-item" href="#sec5">Access</a></li>
             </ul>
           </nav>
         </div>
           <nav class="pc-nav">
             <ul>
-              <li><a href="#">About</a></li>
+              <li><a href="#sec1">About</a></li>
               <li><a href="#">Staf</a></li>
-              <li><a href="#">Menu</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Access</a></li>
+              <li><a href="#sec3">Menu</a></li>
+              <li><a href="#sec4">Blog</a></li>
+              <li><a href="#sec5">Access</a></li>
             </ul>
           </nav>
       </div>
@@ -79,7 +105,7 @@
 
     <div class="container">
       <!-- About開始 -->
-      <section class="about">
+      <section class="about" id="sec1">
         <div class="info">
           <h2>About</h2>
           <p class="sub">私たちについて</p>
@@ -88,7 +114,7 @@
             コンセプトについての説明。コンセプトについての説明。コンセプトについての説明。コンセプトについての説明。コンセプトについての説明。コンセプトについての説明。
           </p>
         </div>
-        <img src="images/about-image.png">
+        <img src="images/about-image.png" alt="メイクしている女性">
       </section>
 
       <!-- About終了 -->
@@ -101,47 +127,53 @@
           <p class="sub">アイテム</p>
         </div>
 
-        <div class="item">
-          <figure>
-            <img src="images/item-image.png">
-            <figcaption>ファンデーション</figcaption>
-            <h3>商品名</h3>
-            <p class="pc-words">
-              この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。
-            </p>
-            <p class="sp-words">
-              商品について
-            </p>
-          </figure>
+        <ul class="item">
+          <li>
+           <figure>
+              <img src="images/item-image.png" alt="商品の画像">
+              <figcaption>ファンデーション</figcaption>
+              <h3>商品名</h3>
+              <p class="pc-words">
+                この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。
+              </p>
+              <p class="sp-words">
+                商品について
+              </p>
+            </figure>
+          </li>
 
-          <figure>
-            <img src="images/item-image.png">
-            <figcaption>リップ</figcaption>
-            <h3>コスメ2コスメ2コスメ2コスメ2コスメ2</h3>
-            <p class="pc-words">
-              商品について商品について商品について商品について商品について商品について
-            </p>
-            <p class="sp-words">
-              商品について
-            </p>
-          </figure>
+          <li>
+            <figure>
+              <img src="images/item-image.png" alt="商品の画像">
+              <figcaption>リップ</figcaption>
+              <h3>コスメ2コスメ2コスメ2コスメ2コスメ2</h3>
+              <p class="pc-words">
+                商品について商品について商品について商品について商品について商品について
+              </p>
+              <p class="sp-words">
+                商品について
+              </p>
+            </figure>
+          </li>
 
-          <figure class="item3">
-            <img src="images/item-image.png">
-            <figcaption>アイシャドー</figcaption>
-            <h3>コスメ3コスメ3コスメ3コスメ3</h3>
-            <p>
-              真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中
-            </p>
-          </figure>
-        </div>
+          <li>
+            <figure class="item3"　 alt="商品の画像">
+              <img src="images/item-image.png">
+              <figcaption>アイシャドー</figcaption>
+              <h3>コスメ3コスメ3コスメ3コス</h3>
+              <p>
+                真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中
+              </p>
+            </figure>
+          </li>
+        </ul>
       </section>
 
       <!-- Item終了 -->
 
       <!-- Price開始 -->
 
-      <section class="menu">
+      <section class="menu" id="sec3">
         <div class="price">
           <div class="price-head">
             <h2>Price</h2>
@@ -150,23 +182,23 @@
 
             <table>
               <tr>
-                <td>アイライナー</td>
+                <th>アイライナー</th>
                 <td class="table-right">¥3,000</td>
               </tr>
               <tr>
-                <td>リップ</td>
+                <th>リップ</th>
                 <td class="table-right">¥3,000</td>
               </tr>
               <tr>
-                <td>グロス</td>
+                <th>グロス</th>
                 <td class="table-right">¥3,000</td>
               </tr>
               <tr>
-                <td>シャドウ</td>
+                <th>シャドウ</th>
                 <td class="table-right">¥3,000</td>
               </tr>
               <tr>
-                <td>マニキュア</td>
+                <th>マニキュア</td>
                 <td class="table-right">¥3,000</td>
               </tr>
             </table>
@@ -178,29 +210,29 @@
 
       <!-- Blog開始 -->
 
-      <section class="blog">
+      <section class="blog" id="sec4">
         <h2>Blog</h2>
         <p class="sub">ブログ</p>
         <div class="blog-list">
           <div>
-            <img src="images/blog1.png">
+            <img src="images/blog1.png" alt="オレンジと仰向きの女性の画像">
             <time>2019/12/3</time>
             <p>1月の営業日ご案内。</p>
           </div>
 
           <div>
-            <img src="images/blog2.png">
+            <img src="images/blog2.png" alt="三編み女性の後姿">
             <time>2019/11/2</time>
             <p>12月の営業日ご案内。</p>
           </div>
 
           <div>
-            <img src="images/blog3.png">
+            <img src="images/blog3.png" alt="コスメの画像">
             <time>2019/11/2</time>
             <p>メイク始めました。</p>
           </div>
 
-          <div class="blog4">
+          <div class="blog4" alt="コスメの画像">
             <img src="images/blog4.png">
             <time>2019/11/2</time>
             <p>メイク始めました。</p>
@@ -212,7 +244,7 @@
 
       <!-- access開始 -->
 
-      <section class="access">
+      <section class="access"  id="sec5">
         <h2>Access</h2>
         <p class="sub">アクセス</p>
 

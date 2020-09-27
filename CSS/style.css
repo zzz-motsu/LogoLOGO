@@ -1,28 +1,32 @@
 @charset "utf-8";
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.8;
   color: black;
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 6.4rem;
   line-height: 1.3;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 4.8rem;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 1%;
 }
 
 h2:before {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -20px; /*線の上下位置*/
+  bottom: 0px; /*線の上下位置*/
   display: block;
   width: 69px; /*線の長さ*/
   height: 5px; /*線の太さ*/
@@ -31,14 +35,14 @@ h2:before {
 
 h3 {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体";
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 p,
 menu .list div,
 .access-list dd {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体";
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 /*-----------------------------------------
@@ -61,7 +65,7 @@ menu .list div,
 
 .main-info .pc-words {
   color: #ffffff;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: bold;
 }
 
@@ -84,14 +88,14 @@ menu .list div,
 
 .header-left a {
   color: white;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
   text-decoration: none;
 }
 
 .header-left p {
   color: white;
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -105,8 +109,7 @@ menu .list div,
 }
 
 .about {
-  margin-top: 161px;
-  margin-bottom: 153px;
+  margin: 16% 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -124,7 +127,7 @@ menu .list div,
 
 .sub {
   font-weight: bold;
-  padding-bottom: 23px;
+  margin-bottom: 2.3rem;
 }
 
 /*-----------------------------------------
@@ -134,21 +137,20 @@ menu .list div,
 .items .item {
   display: flex;
   justify-content: space-between;
-  margin-top: 23px;
 }
 
-.items .item figure {
+.items .item li {
   width: 33%;
 }
 
 .item figcaption {
-  margin-bottom: 40px;
+  margin-bottom: 4%;
   font-weight: bold;
 }
 
 .item h3 {
   font-family: "Montserrat", sans-serif;
-  padding-bottom: 18px;
+  padding-bottom: 5%;
 }
 
 .item .item3 p {
@@ -162,15 +164,13 @@ menu .list div,
 .menu {
   background-image: url(../images/price-image.png);
   background-repeat: no-repeat;
-  background-position: 341px 231px;
-  margin-top: 160px;
-  margin-bottom: 283px;
-  height: 977px;
-  overflow: hidden;
+  background-position: 341px 93px;
+  margin: 16% 0 20%;
+  padding-bottom: 42.8rem;
 }
 
 .menu .price {
-  padding: 55px 85px 67.4px 85px;
+  padding: 5.5rem 8.5rem 6.7rem 8.5rem;
   border: 5px solid #a38787;
   background-color: rgba(255, 255, 255, 0.8);
   width: 324px;
@@ -185,6 +185,7 @@ menu .list div,
 }
 
 .menu h2:before {
+  transform-origin: center;
   left: 40%;
 }
 
@@ -192,11 +193,15 @@ table {
   width: 100%;
 }
 
-table .table-right {
+table th {
+  text-align: left;
+}
+
+table td {
   text-align: right;
 }
 
-.menu td {
+.menu td,th {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体";
   border-bottom: dashed 0.5px #707070;
   line-height: 3.6;
@@ -210,7 +215,7 @@ table .table-right {
 .blog .blog-list {
   display: flex;
   justify-content: space-between;
-  padding-top: 62px;
+  margin-top: 6.2rem;
 }
 
 .blog time {
@@ -224,22 +229,22 @@ table .table-right {
 -----------------------------------------*/
 
 .access {
-  margin: 190px 0 219px;
+  margin: 19% 0 22%;
 }
 
 .access-container {
   display: flex;
   justify-content: space-between;
-  padding: 93px 0 152px 0;
+  margin: 9rem 0 15rem 0;
 }
 
 .access .access-list dt {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 .access .access-list dd {
-  padding-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
 
 .access .root {
@@ -248,7 +253,7 @@ table .table-right {
 }
 
 .access .root li {
-  padding-top: 31px;
+  margin-top: 3rem;
 }
 
 /*-----------------------------------------
@@ -258,7 +263,7 @@ table .table-right {
 footer {
   background-color: #262626;
   border: 1px solid #5c3333;
-  width: 100%;
+  width: auto;
   height: 264px;
   display: flex;
   justify-content: center;
@@ -267,7 +272,7 @@ footer {
 
 footer p {
   font-family: "Montserrat", sans-serif;
-  font-size: 80px;
+  font-size: 8rem;
   font-weight: bold;
   color: #ffffff;
 }
